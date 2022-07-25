@@ -13,17 +13,6 @@ resource "random_id" "content1" {
   byte_length = 6
 }
 
-#only locals
-resource "local_file" "file" {
-    filename = local.name
-    content  = local.content
-}
-
-locals {
-  name    = "TestFILE.txt"
-  content = "using locals in terraform"
-}
-
 #String
 resource "local_file" "file2" {
     filename = "string_file.txt"
