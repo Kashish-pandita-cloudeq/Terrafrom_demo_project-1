@@ -1,0 +1,1 @@
+using locals in terraform
